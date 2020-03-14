@@ -10,10 +10,11 @@
 
 ## Wire it up to Netlify
 
-- Make a netlify toml file
+- Make a netlify toml file (below)
+-
 
 ```toml
-// netlify.toml
+# netlify.toml
 [build]
   functions = "functions"
 
@@ -22,6 +23,3 @@
   to = 'netlify/functions/:splat'
   status = 200
 ```
-
-keyname = 259980809478341139
-role = server
