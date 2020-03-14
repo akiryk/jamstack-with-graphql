@@ -1,0 +1,24 @@
+type Todo {
+  text: String!
+  completed: Boolean
+}
+
+enum Color {
+  RED
+  BLUE
+  GREEN
+  YELLOW
+  SORREL
+}
+
+type Product {
+  name: String!
+  desc: String!
+  color: Color!
+  cost: Float
+}
+
+type Query {
+  allTodos: [Todo!]
+  allProducts: [Product!]
+}
